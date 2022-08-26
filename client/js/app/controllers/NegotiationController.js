@@ -9,15 +9,9 @@ class NegotiationController {
     
     add(event) {
         event.preventDefault();
-        
-        let date = new Date(
-            ...this._inputDate.value
-                .split('-')
-                .map((item, index) => item - index % 2)
-        );
                 
         let negotiation = new Negotiation(
-            date,
+            DateHelper.textToDate(this._inputDate.value),
             this._inputQuantity.value,
             this._inputValue.value,
         );
