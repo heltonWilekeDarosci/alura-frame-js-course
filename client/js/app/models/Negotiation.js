@@ -1,7 +1,7 @@
 class Negotiation {
 
     constructor (date, quantity, value) {
-        this._date = new Date(data.getTime()); //Defensive programming to avoid altering//
+        this._date = new Date(date.getTime()); //Defensive programming to avoid altering//
         this._quantity = quantity;
         this._value = value;
         Object.freeze(this);
