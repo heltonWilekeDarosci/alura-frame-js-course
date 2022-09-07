@@ -1,0 +1,50 @@
+<!-- This is a test page only-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h1>TITLE</h1>
+    <P>PARAGRAPH</P>
+    <DIV>DATA</DIV> -->
+
+    <script>
+        // console.log(this); //window
+
+        // let exhibitContent = () => {
+        //     console.log(this);
+        //     alert(this.textContent);
+        // };
+
+        // $ = document.querySelector.bind(document);
+
+        // $('h1').addEventListener('click', exhibitContent);
+        // $('p').addEventListener('click', exhibitContent);
+        // $('div').addEventListener('click', exhibitContent);
+
+        class PrintSystem {
+
+            constructor() {
+                this._code = 2;
+            }
+
+            print(names) {
+                names.forEach(name => {
+                    console.log(this);
+                    console.log(`${this._code}: ${name}`);
+                });
+            }
+        }
+
+        let names = ['Helton', 'Fabíola', 'Douglas'];
+        let si = new PrintSystem();
+        si.print(names);
+
+    </script>
+</body>
+</html>
