@@ -7,14 +7,15 @@ class NegotiationList {
 
     add(negotiation) {
         this._negotiations.push(negotiation);
-        this.trap(this);
+        this._trap(this);
     }
     
     get negotiations() {
         return [].concat(this._negotiations); //Defensive programming to avoid altering//
     }
-
+    
     clear() {
         this._negotiations = [];
+        this._trap(this);
     }
 }
