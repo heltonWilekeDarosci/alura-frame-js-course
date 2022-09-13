@@ -13,13 +13,13 @@ class NegotiationView extends View {
                 </thead>
                 
                 <tbody>
-                    ${model.negotiations.map(n => `
+                    ${model.negotiations.map(negotiation => `
                             
                         <tr>
-                            <td>${DateHelper.dateToText(n.date)}</td>
-                            <td>${n.quantity}</td>
-                            <td>${n.value}</td>
-                            <td>${n.volume}</td>
+                            <td>${DateHelper.dateToText(negotiation.date)}</td>
+                            <td>${negotiation.quantity}</td>
+                            <td>${negotiation.value}</td>
+                            <td>${negotiation.volume}</td>
                         </tr>
                         
                     `).join('')}

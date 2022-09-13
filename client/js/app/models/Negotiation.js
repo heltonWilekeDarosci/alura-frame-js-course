@@ -11,7 +11,7 @@ class Negotiation {
         return new Date(this._date.getTime());
     }
     
-    get quatity () {
+    get quantity () {
         return this._quantity;
     }
     
